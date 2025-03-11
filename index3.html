@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trix - Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="trix.png" alt="Trix logo">
+        </div>
+        <nav class="nav-grid">
+            <a href="index.html" class="nav-item">O nama</a>
+            <a href="index1.html" class="nav-item">Usluge</a>
+            <a href="index2.html" class="nav-item">Projekti</a>
+            <a href="index3.html" class="nav-item">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="kontakt" class="content-section">
+            <h2>Kontakt</h2>
+            <p>
+                <b>Adresa:</b> Ulica Izmišljena 123, 10000 Zagreb, Hrvatska
+                <br><b>Telefon:</b> +385 1 123 4567
+                <br><b>Mobitel:</b> +385 91 123 4567
+                <br><b>Email:</b> info@trix.hr
+            </p>
+
+            <form action="#" method="post" class="contact-form">
+                <label for="ime">Ime i prezime / Ime poslovnog subjekta:</label>
+                <input type="text" id="ime" name="ime" required>
+
+                <label for="telefon">Broj telefona:</label>
+                <input type="tel" id="telefon" name="telefon" pattern="[0-9]*" required>
+
+                <label for="upit">Sadržaj upita (max 200 znakova):</label>
+                <textarea id="upit" name="upit" maxlength="200"></textarea>
+
+                <div class="button-group">
+                    <button type="reset" class="button-clear">Obriši</button>
+                    <button type="submit" class="button-submit">Pošalji</button>
+                </div>
+            </form>
+        </section>
+    </main>
+<footer>
+    <p class="registered">
+        <span>&copy;</span>
+        <span>Trix Ltd.</span>
+        <span>&trade;</span>
+    </p>
+</footer>
+</body>
+</html>
